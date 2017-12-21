@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 Route::get('/about', ['as' => 'about', 'uses' => function () {
 
-    return view('about');
+    return view('cars.about');
 }]);
 
 Route::get('/cars', 'CarsController@index')->name('cars');

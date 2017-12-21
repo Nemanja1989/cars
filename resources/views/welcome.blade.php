@@ -87,6 +87,7 @@
 
                 <div class="links">
                     <a href="http://vivify.local/cars/public/about">About</a>
+                    <a href="http://vivify.local/cars/public/cars">Cars</a>
                 </div>
             </div>
         </div>
