@@ -3,11 +3,11 @@
  * Created by PhpStorm.
  * User: nemanja
  * Date: 21.12.17.
- * Time: 19.02
+ * Time: 19.16
  */
 ?>
 
-<!doctype html>
+        <!doctype html>
 <html lang="{{ app()->getLocale() }}">
 <head>
     <meta charset="utf-8">
@@ -77,18 +77,13 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-           Cars:
+            This is {{$car->title}} and it is made by {{$car->producer}} !
         </div>
-
-        <ul>
-            @foreach($cars as $car)
-                <li>
-                    <a href= {{route('car', ['id' => $car->id])}}> {{ $car->title }} </a>
-                </li>
-            @endforeach
-        </ul>
-
     </div>
 </div>
 </body>
 </html>
+
+
+
+

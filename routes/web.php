@@ -21,8 +21,9 @@ Route::get('/', function () {
 
 Route::get('/about', ['as' => 'about', 'uses' => function () {
 
-    //koristi compact
     return view('about');
 }]);
 
 Route::get('/cars', 'CarsController@index')->name('cars');
+
+Route::get('/car/{id}', 'CarsController@show')->name('car');
